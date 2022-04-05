@@ -30,7 +30,7 @@ Ampersand
 
 ## *
 Asterisk
-에스터리스크, 별표
+애스터리스크, 별표
 
 ## -
 Hyphen, Dash
