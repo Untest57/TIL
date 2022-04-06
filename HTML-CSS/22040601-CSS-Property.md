@@ -13,7 +13,7 @@
   - `absolute`  
     위치 상 부모 요소를 기준
     상위 요소를 따라가면서 position(기준-static 제외) 이 지정된 가장 가까운 요소를 기준  
-    - 보통 부모요소에 지정해줘야 의도대로
+    - 보통 부모요소에 `position` 지정해줘야 의도대로
   - `fixed`  
     뷰포트(브라우저)를 기준  
     화면이 스크롤되거나 해도 화면 내에 고정됨
@@ -23,9 +23,9 @@
 - `absolute, fixed` 는 display 가 block 으로 바뀜
 
 - `top, bottom, left, right`  
-  요소의 각 방향 별 거리 지정
-  auto | 단위
-  - auto 는 보통 원래 자기가 있어야 할 위치
+  요소의 각 방향 별 거리 지정  
+  auto | 단위  
+  - auto 는 보통 원래 자기가 있어야 할 위치  
 
 ### 요소 쌓임 순서(Stack order)
 어떤 요소가 사용자와 더 가깝게 있는지(위에 쌓이는지 ) 결정
@@ -91,8 +91,8 @@ display: flex 를 선언한 요소는 Flex Container, 자식들은 Flex Items
 
 - Item들이 Content 크기 상관없이 비율대로 차지하기  
   ```css
-  flex-grow: 비율
-  flex-basis: 0
+  flex-grow: 비율;
+  flex-basis: 0;
   ```
 
 ## 전환
@@ -115,14 +115,14 @@ display: flex 를 선언한 요소는 Flex Container, 자식들은 Flex Items
   0s | 시간(s)
 
 ## 변환
-- `transform` 
+- `transform`  
   요소의 변환 효과  
-  변환함수1 변환함수2 ... 
+  변환함수1 변환함수2 ...  
   원근법 이동 크기 회전 기울임  
 - 2D 변환
-  - `translte(x, y)`  
-  - `translteX(x)`  
-  - `translteY(y)`  
+  - `translate(x, y)`  
+  - `translateX(x)`  
+  - `translateY(y)`  
     이동 함수
   - `scale(x, y)` 
   - `scaleX(x)`  
@@ -140,24 +140,24 @@ display: flex 를 선언한 요소는 Flex Container, 자식들은 Flex Items
   - `scaleZ(z)`
   - `scale3d(x, y ,z)`
   - `rotateX(x축)`
-  - `rateteY(y축)`
-  - `rateteZ(z축)`
-  - `ratete3d(x축, y축, z축, 각도)`
-  - `perspective(단위)` 
-    원근법(거리) 
+  - `rotateY(y축)`
+  - `rotateZ(z축)`
+  - `rotate3d(x축, y축, z축, 각도)`
+  - `perspective(단위)`  
+    원근법(거리)  
     가까울수록 입체감이 심하게 나타남 
-- `perspective` 
-  하위 요소를 관찰하는 원근 거리를 지정
-  단위
+- `perspective`  
+  하위 요소를 관찰하는 원근 거리를 지정  
+  단위  
   - 속성과 변환 함수 차이  
     | property                      | 적용 대상        | 기준점 설정        |
     | ----------------------------- | ---------------- | ------------------ |
     | perpective: 600px             | 관찰 대상의 부모 | perspective-origin |
-    | transform: perspective(600px) | 관찰 대상        | tranform-origin    |
+    | transform: perspective(600px) | 관찰 대상        | tranform-origin    |  
     
     그리 인해 카메라 중점이 달라져서 보여지는게 달라짐
-- `backface-visibility` 
-  3D 변환으로 회전된 요소의 뒷면 숨김 여부  
+- `backface-visibility`  
+  3D 변환으로 회전된 요소의 뒷면 숨김 여부
   visible | hidden
 
 
