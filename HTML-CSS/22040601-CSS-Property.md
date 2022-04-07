@@ -19,8 +19,13 @@
     화면이 스크롤되거나 해도 화면 내에 고정됨
   - `sticky`  
     스크롤 영역 기준
+    - 가장 가까운 조상 스크롤 박스에 달라붙음
+      - overflow 로 스크롤 박스를 만들 수 있음
+    - 가장 가까운 조상 블록 조상(보통 부모) 요소 범위 안에서만 움직임
   
 - `absolute, fixed` 는 display 가 block 으로 바뀜
+- `relative, fixed`  
+사용 시 조상 요소 중에 transform, perspective, filter 속성들 중 none 아니면 그 조상을 컨테이닝 블록이 됨
 
 - `top, bottom, left, right`  
   요소의 각 방향 별 거리 지정  
