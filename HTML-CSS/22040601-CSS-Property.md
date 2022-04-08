@@ -24,7 +24,7 @@
     - 가장 가까운 조상 블록 조상(보통 부모) 요소 범위 안에서만 움직임
   
 - `absolute, fixed` 는 display 가 block 으로 바뀜
-- `relative, fixed`  
+- `absolute, relative, fixed`  
 사용 시 조상 요소 중에 transform, perspective, filter 속성들 중 none 아니면 그 조상을 컨테이닝 블록이 됨
 
 - `top, bottom, left, right`  
@@ -73,7 +73,6 @@ display: flex 를 선언한 요소는 Flex Container, 자식들은 Flex Items
 - `align-items`  
   교차 축의 <u>한 줄</u> 정렬 방법
   stretch | flex-start | flex-end | center | baseline
-- `flow-flow`  
 
 ### Flex Items
 - `order`  
