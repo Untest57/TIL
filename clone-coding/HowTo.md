@@ -58,7 +58,7 @@ img 는 기본적으로 inline 으로 inline 요소는 기본적으로 baseline 
 }
 ```
 
-##### `offset: 50%; margin: (width|height) * 0.5` 로 정렬하는 법
+##### `위치지정: 50%; margin: (width|height) * 0.5` 로 정렬하는 법
 
 
 ### 메뉴  
