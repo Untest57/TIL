@@ -48,7 +48,7 @@
   none | auto | 단위  
 - `min-width, min-height`  
   최소 가로/세로 너비  
-  0 | auto | 단위
+  auto(0) | 단위
 - `margin`  
   요소의 <b>외부</b> 여백을 지정 하는 단축 속성  
   0 | auto | 단위(단축) | %(부모 요소의 가로 너비를 비율로)
