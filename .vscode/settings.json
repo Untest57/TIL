@@ -1,0 +1,20 @@
+{
+  "pasteImage.basePath": "${currentFileDir}",
+  "pasteImage.path": "${currentFileDir}/img",
+  "pasteImage.showFilePathConfirmInputBox": true,
+  "pasteImage.insertPattern": "<img src=\"./${imageFilePath}\" width=\"500px\" />",
+  "MarkdownPaste.path": "${fileDirname}/img",
+  "MarkdownPaste.enableImgTag": true,
+  "MarkdownPaste.rules": [
+    {
+      "regex": "^(?:https?://)?(?:(?:(?:www\\.?)?youtube\\.com(?:/(?:(?:watch\\?.*?v=([^&\\s]+).*)|))?))",
+      "options": "g",
+      "replace": "[![](https://img.youtube.com/vi/$1/0.jpg)](https://www.youtube.com/watch?v=$1)"
+    },
+    {
+      "regex": "^(https?://.*)",
+      "options": "ig",
+      "replace": "[]($1)"
+    }
+  ]
+}
