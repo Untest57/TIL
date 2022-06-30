@@ -1,17 +1,3 @@
-# 220628 live
-
-## vue composition api
-options api 와 다르게 내가 원하는 코드를 묶어서 보기 위해 나오긴 했는데  
-react 함수 컴포넌트나 hooks 에 대응하고 ts 를 좀더 쉽게 적용하기 위해서...  
-react 함수 컴포넌트에 익숙하면 코드 읽기가 참 편하다....  
-
-```vue
-<script setup lang=ts>
-</script>
-```
-
-options api 와 대응
-
 | options                             | composition                                       |
 | ----------------------------------- | ------------------------------------------------- |
 | `components: {...}`                 | 사용할 컴포넌트 이름에 맞춰서 import              |
@@ -35,22 +21,3 @@ options api 와 대응
 | `this.$route`  | `const route = useRoute()`   |
 | `this.$router` | `const router = useRouter()` |
 
-### 반응성 유지하면서 객체에서 꺼내오기
-```js
-const $props = defineProps({
-  name: {
-    type: String,
-    required: true
-  },
-  suffix: {
-    type: String,
-    default: '...'
-  }
-})
-
-
-// ref 부른거랑 같음
-const { name } = toRefs($props)
-const suffix = toRef($props, 'suffix')
-
-```
