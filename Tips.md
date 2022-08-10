@@ -24,3 +24,18 @@
   `nvm` 설치나 설정 시 꼭 관리자 권한으로 할 것  
   이후 사용은 상관없음
   이유: node.js 폴더의 링크를 바꾸는 식으로 적용하는데 이때 보통 'Program Files' 에 깔려서 여기 접근하는데 관리자 권한이 필요하다.
+
+
+## Font
+### weight - name
+| Value | Common weight name        |
+| ----- | ------------------------- |
+| 100   | Thin (Hairline)           |
+| 200   | Extra Light (Ultra Light) |
+| 300   | Light                     |
+| 400   | Normal, Regular           |
+| 500   | Medium                    |
+| 600   | Semi Bold (Demi Bold)     |
+| 700   | Bold                      |
+| 800   | Extra Bold (Ultra Bold)   |
+| 900   | Black (Heavy)             |
